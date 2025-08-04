@@ -9,3 +9,7 @@ def even_odd(request):
         return HttpResponse("Number is even")
     else:
         return HttpResponse("Number is Odd")
+
+def siddu(request):
+    return HttpResponse("Helloo Sidduuu")
+

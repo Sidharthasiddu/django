@@ -3,5 +3,6 @@ from myapp import views
 
 urlpatterns = [
     path('home', views.hello),  # no 'name' parameter
-    path('check',views.even_odd)
+    path('check',views.even_odd),
+    path("siddu",views.siddu)
 ]
