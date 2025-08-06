@@ -3,6 +3,9 @@ import requests
 from django.http import JsonResponse
 
 
+def welcome(request):
+    return HttpResponse("Welcome to my website")
+
 def hello(request):
     return HttpResponse("Hello, Welcome to LPU")
 
