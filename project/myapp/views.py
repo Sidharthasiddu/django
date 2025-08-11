@@ -3,6 +3,7 @@ import requests
 from django.http import JsonResponse
 
 
+
 def welcome(request):
     return HttpResponse("Welcome to my website")
 
@@ -44,3 +45,20 @@ def jsonsecond(request,data):
         return JsonResponse({data: d[data]})
     else:
         return HttpResponseNotFound(f"Key '{data}' not found.")
+
+def addition(request,a,b):
+    return HttpResponse(f"The addition of {a} and {b} is {a+b}")
+
+def greet(request,name):
+    return HttpResponse(f"Heelooo {name}")
+
+#Mapping urls with parameters
+
+def ssitedata(request,name):
+    return HttpResponse(f"{name}")
+
+def userName(request,username):
+    return HttpResponse(f"welcome, {username}")
+
+def report(request,date):
+    return HttpResponse(f"date: {date}")
