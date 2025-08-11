@@ -62,3 +62,6 @@ def userName(request,username):
 
 def report(request,date):
     return HttpResponse(f"date: {date}")
+
+def gmail(request,email):
+    return HttpResponse(f"gmail from URL: {email}")

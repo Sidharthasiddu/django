@@ -15,5 +15,6 @@ urlpatterns = [
     path("ssitedata/<str:name>/",views.ssitedata),
     path("ssitedata2/<name>/",views.ssitedata),
     re_path(r'^user/(?P<username>[a-zA-Z0-9_#@]+)/$',views.userName),
-    re_path(r'^date/(?P<date>\d{4}-\d{2}-\d{2})/$',views.report)
+    re_path(r'^date/(?P<date>\d{2}-\d{2}-\d{4})/$',views.report),
+    re_path(r'^gmail/(?P<email>[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})',views.gmail)
 ]
